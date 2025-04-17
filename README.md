@@ -71,6 +71,6 @@ To determine whether **daily news sentiment** has a predictive or explanatory im
 Computer Science @ UTK  
 
 
-** Nayana Patil**  
+**Nayana Patil**  
 Computer Science @ UTK  
 
