@@ -2,7 +2,7 @@ import yfinance as yf
 import pandas as pd
 
 # Step 1: Download historical S&P 500 data (ticker: ^GSPC)
-sp500_raw = yf.download("^GSPC", start="2018-01-01", end="2023-01-01")
+sp500_raw = yf.download("^GSPC", start="2018-04-30", end="2023-04-23")
 
 # Step 2: Flatten the MultiIndex by resetting columns
 sp500_raw.columns = ['_'.join(col).strip() for col in sp500_raw.columns.values]
@@ -23,4 +23,4 @@ sp500.reset_index(inplace=True)
 print(sp500.head())
 
 # Step 8: Save to CSV
-sp500.to_csv("sp500_cleaned_2018_2023.csv", index=False)
+sp500.to_csv("sp500_cleaned_2018_2023_new.csv", index=False)
